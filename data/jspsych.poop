@@ -1,0 +1,67 @@
+{ "name":"jsPsych",
+  "version": 5.0,
+  "load_string": "",
+  "repo_url": "https://github.com/jodeleeuw/jsPsych",
+  "repo_name": "GitHub",
+  "modules": [{"name":"init",
+               "required":"true",
+               "parameters": [
+                                {
+                                  "name": "timeline",
+                                  "type": "array",
+                                  "description": "An array containing the objects that describe the experiment timeline.",
+                                },
+                                {
+                                  "name": "display_element",
+                                  "type": "JQuery object",
+                                  "description": "A jQuery-selected DOM element, e.g., $('#target') selects the element with the id='target' attribute. If left blank, then jsPsych will use the <body> element to display content (creating it if necessary). You can override this parameter at the trial level as well by specifying a display_element property on any timeline.",
+                                },
+                                {
+                                  "name": "on_finish",
+                                  "type": "function",
+                                  "description": "Function to execute when the experiment ends."
+                                },
+                                {
+                                  "name": "on_trial_start",
+                                  "type": "function",
+                                  "description": "Function to execute when a new trial begins."
+                                },
+                                {
+                                  "name": "on_trial_finish",
+                                  "type": "function",
+                                  "description": "Function to execute when a trial ends."
+                                },
+                                {
+                                  "name": "on_data_update",
+                                  "type": "function",
+                                  "description": "If true, then a progress bar is shown at the top of the page."
+                                },
+                                {
+                                  "name": "show_progress_bar",
+                                  "type": "boolean",
+                                  "description": "Function to execute every time data is stored using the jsPsych.data.write method. All plugins use this method to save data (via a call to jsPsych.finishTrial, so this function runs every time a plugin stores new data.",
+                                },
+                                {
+                                  "name": "max_load_time",
+                                  "type": "numeric",
+                                  "description": "The maximum number of milliseconds to wait for audio content to preload. If the wait time is exceeded, then an error message is logged and the experiment stops. The default value is 30 seconds.",
+                                },
+                                {
+                                  "name": "skip_load_check",
+                                  "type": "boolean",
+                                  "description": "If true, then the experiment will not wait for audio content to load before starting. The default value is false.",
+                                },
+                                {
+                                  "name": "fullscreen",
+                                  "type": "boolean",
+                                  "description": "If true, the experiment will run in fullscreen mode. See the feature page for more details.",
+                                },
+                                {
+                                  "name": "default_iti",
+                                  "type": "numeric",
+                                  "description": "The default inter-trial interval in ms. The default value if none is specified is 1,000ms.",
+                                }
+                             ]
+              }
+             ]  
+ }
